@@ -27,7 +27,7 @@ class Runner(pg.sprite.Sprite):
             if keys[key]:
                 self.rect.x += DIRECT_DICT[key] * self.speed
 
-        if keys[pg.K_SPACE] and self.rect.bottom == self.resting_height:
+        if keys[pg.K_SPACE] and self.fall == False:
             self.jump = True
 
         if keys[pg.K_RIGHT]:
@@ -38,6 +38,8 @@ class Runner(pg.sprite.Sprite):
         self.rect.right -= camera_adjust_x
         self.vertical_move()
 
+
+
     def vertical_move(self):
         if self.jump:
             self.rect.y -= constants.JUMP_SPEED
@@ -46,12 +48,20 @@ class Runner(pg.sprite.Sprite):
                 self.fall = True
         elif self.fall:
             self.rect.y += constants.FALL_SPEED
-            if self.rect.bottom >= constants.STARTY:
-                self.fall = False
-                self.rect.bottom = self.resting_height
 
         else:
             self.rect.bottom = self.resting_height
+
+
+    def collision(self, platforms):
+        collided_sprite = pg.sprite.spritecollideany(self, platforms)
+        if collided_sprite:
+            self.fall = False
+            self.rect.bottom = collided_sprite.rect.top
+            self.resting_height = self.rect.bottom
+
+
+
 
 
 

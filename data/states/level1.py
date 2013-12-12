@@ -4,7 +4,7 @@ import pygame as pg
 from .. import setup
 from .. import tools
 from .. import constants
-from .. components import runner,ground
+from .. components import runner,ground,platform
 
 
 class Level_1(tools._State):
@@ -15,7 +15,12 @@ class Level_1(tools._State):
     def startup(self, current_time, persistant):
         self.setup_runner()
         self.setup_ground()
-        self.allSprites = pg.sprite.Group(self.runner, self.ground)
+        self.setup_platforms()
+        self.jump_on_sprites = pg.sprite.Group(self.ground,
+                                               self.platforms)
+        self.allSprites = pg.sprite.Group(self.runner,
+                                          self.ground,
+                                          self.platforms)
         self.camera_adjust_x = 0
 
     def setup_runner(self):
@@ -25,7 +30,7 @@ class Level_1(tools._State):
 
     def setup_ground(self):
         ground_list = []
-        for i in range(11):
+        for i in range(20):
             ground_list.append(ground.Ground())
 
         for i in range(len(ground_list)):
@@ -33,22 +38,14 @@ class Level_1(tools._State):
             ground_list[i].rect.y = constants.STARTY
 
         self.ground = pg.sprite.Group(ground_list)
-        self.allSprites.add(self.ground)
 
-    def update_runner(self, keys):
-        self.runner.update(keys, self.camera_adjust_x)
 
-    def update_ground(self, keys):
-        for tile in self.ground:
-            tile.update(keys, self.camera_adjust_x)
+    def setup_platforms(self):
+        platform1 = platform.Platform()
+        platform1.rect.x = constants.PLAT1_STARTX
+        platform1.rect.y = constants.PLAT1_STARTY
+        self.platforms = pg.sprite.Group(platform1)
 
-            if tile.rect.left > 800 and tile.rect.right > 800:
-                right_edge = tile.rect.right
-                self.ground.add(ground.Ground(right_edge,
-                                             constants.STARTY))
-            elif tile.rect.
-                del self.ground[0]
-                print len(self.ground)
 
     def camera(self):
         if self.runner.rect.right > constants.CAMERA_XPOINT:
@@ -60,14 +57,14 @@ class Level_1(tools._State):
         else:
             self.camera_adjust_x = 0
 
+
     def update(self, surface, keys, current_time):
         """Updates level"""
         self.current_time = current_time
         setup.SCREEN.fill(constants.BGCOLOR)
-        self.update_runner(keys)
-        self.update_ground(keys)
         self.camera()
-
+        self.allSprites.update(keys, self.camera_adjust_x)
+        self.runner.collision(self.jump_on_sprites)
         self.allSprites.draw(surface)
 
 

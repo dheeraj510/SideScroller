@@ -18,7 +18,7 @@ BLACK        = (  0,   0,   0)
 NEAR_BLACK    = ( 19,  15,  48)
 COMBLUE      = (233, 232, 255)
 
-BGCOLOR = WHITE #NEAR_BLACK
+BGCOLOR = NEAR_BLACK
 
 
 ##Runner Constants##
@@ -40,3 +40,11 @@ CAMERA_XPOINT = 400
 
 GROUND_WIDTH = 80
 GROUND_HEIGHT = 100
+
+
+##Platform Constants##
+
+PLAT_WIDTH = 80
+PLAT_HEIGHT = 20
+PLAT1_STARTX = 500
+PLAT1_STARTY = STARTY - 100
