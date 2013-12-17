@@ -15,6 +15,7 @@ class Ground(pg.sprite.Sprite):
         self.rect.x = x
         self.rect.y = y
         self.color = constants.FOREST_GREEN
+        self.name = 'ground'
 
     def update(self, keys, camera_adjust_x, *args):
         self.rect.right -= camera_adjust_x

@@ -18,12 +18,52 @@ class Runner(Physics, pg.sprite.Sprite):
         self.left_image = pg.transform.scale(self.left_image, (80, 80))
         self.image = self.right_image
         self.rect = self.image.get_rect()
+        self.rect.width *= .75
         self.name = con.RUNNER_NAME
         self.speed = con.RUNNER_SPEED
         self.jump_power = con.JUMP_POWER
-        self.fall = False
+        self.moving_right = True
+        self.ok_to_jump = True
+
 
     def update(self, keys, camera_adjust_x, *args):
+        ground_and_platforms = args[0]
+
+        self.event_loop(keys)
+        self.check_x_collisions(ground_and_platforms)
+        self.rect.y += self.y_vel
+        self.check_y_collisions(ground_and_platforms)
+        self.physics_update()
+        self.adjust_camera(camera_adjust_x)
+
+
+    def check_x_collisions(self, colliders):
+        obstacle = pg.sprite.spritecollideany(self, colliders)
+
+        if self.moving_right and obstacle:
+            self.rect.right = obstacle.rect.left
+        elif not self.moving_right and obstacle:
+            self.rect.left = obstacle.rect.right
+
+
+    def check_y_collisions(self, colliders):
+        obstacle = pg.sprite.spritecollideany(self, colliders)
+
+        if self.y_vel < 0 and obstacle:
+            self.rect.top = obstacle.rect.bottom
+            self.y_vel = 0
+        elif self.y_vel > 0 and obstacle:
+            self.rect.bottom = obstacle.rect.top
+            self.y_vel = 0
+            self.ok_to_jump = True
+
+        if self.rect.y > 600:
+            self.kill()
+
+
+
+
+    def event_loop(self, keys):
         for key in DIRECT_DICT:
             if keys[key]:
                 self.rect.x += DIRECT_DICT[key] * self.speed
@@ -33,30 +73,23 @@ class Runner(Physics, pg.sprite.Sprite):
 
         if keys[pg.K_RIGHT]:
             self.image = self.right_image
+            self.moving_right = True
         elif keys[pg.K_LEFT]:
             self.image = self.left_image
-
-        self.rect.right -= camera_adjust_x
-        self.rect.y += self.y_vel
-        self.physics_update()
+            self.moving_right = False
 
 
 
     def jump(self):
-        if not self.fall:
+        if self.ok_to_jump:
             self.y_vel = self.jump_power
-            self.fall = True
+            self.ok_to_jump = False
 
 
 
-    def collision(self, platforms):
-        collided_sprite = pg.sprite.spritecollideany(self, platforms)
-        if collided_sprite:
-            self.fall = False
-            self.rect.bottom = collided_sprite.rect.top
-            self.resting_height = self.rect.bottom
-        else:
-            self.fall = True
+
+    def adjust_camera(self, camera_adjust):
+        self.rect.right -= camera_adjust
 
 
 
