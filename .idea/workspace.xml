@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cdf68d2-6da0-4c77-a206-54e26df0503f" name="Default" comment="" />
+    <list default="true" id="4cdf68d2-6da0-4c77-a206-54e26df0503f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/components/runner.py" afterPath="$PROJECT_DIR$/data/components/runner.py" />
+    </list>
     <ignored path="SideScroller.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="runner.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="runner.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/components/runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="962" selection-end="962" vertical-scroll-proportion="-13.269231" vertical-offset="0" max-vertical-offset="1560">
+            <state line="17" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.4827586" vertical-offset="0" max-vertical-offset="1560">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level1.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="level1.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/states/level1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="25" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.4425428" vertical-offset="809" max-vertical-offset="1380">
+            <state line="66" column="25" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-24.26923" vertical-offset="359" max-vertical-offset="1380">
               <folding>
                 <element signature="e#32#51#0" expanded="true" />
               </folding>
@@ -129,8 +131,8 @@
         <option value="$PROJECT_DIR$/data/components/platform.py" />
         <option value="$PROJECT_DIR$/data/components/physics.py" />
         <option value="$PROJECT_DIR$/data/constants.py" />
-        <option value="$PROJECT_DIR$/data/components/runner.py" />
         <option value="$PROJECT_DIR$/data/states/level1.py" />
+        <option value="$PROJECT_DIR$/data/components/runner.py" />
       </list>
     </option>
   </component>
@@ -439,7 +441,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -544,19 +546,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/components/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="962" selection-end="962" vertical-scroll-proportion="-13.269231" vertical-offset="0" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/states/level1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="25" selection-start="2139" selection-end="2139" vertical-scroll-proportion="0.4425428" vertical-offset="809" max-vertical-offset="1380">
+        <state line="66" column="25" selection-start="2139" selection-end="2139" vertical-scroll-proportion="-24.26923" vertical-offset="359" max-vertical-offset="1380">
           <folding>
             <element signature="e#32#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/components/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="87" selection-start="678" selection-end="678" vertical-scroll-proportion="0.4827586" vertical-offset="0" max-vertical-offset="1560">
+          <folding />
         </state>
       </provider>
     </entry>

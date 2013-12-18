@@ -13,9 +13,9 @@ class Runner(Physics, pg.sprite.Sprite):
         self.width = con.RUNNER_WIDTH
         self.height = con.RUNNER_HEIGHT
         self.right_image = setup.GFX['knightsprite_right']
-        self.right_image = pg.transform.scale(self.right_image, (80, 80))
+        self.right_image = pg.transform.scale(self.right_image, (80, 80)).convert_alpha()
         self.left_image = setup.GFX['knightsprite_left']
-        self.left_image = pg.transform.scale(self.left_image, (80, 80))
+        self.left_image = pg.transform.scale(self.left_image, (80, 80)).convert_alpha()
         self.image = self.right_image
         self.rect = self.image.get_rect()
         self.rect.width *= .75
