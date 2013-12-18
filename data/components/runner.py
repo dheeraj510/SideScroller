@@ -24,6 +24,7 @@ class Runner(Physics, pg.sprite.Sprite):
         self.jump_power = con.JUMP_POWER
         self.moving_right = True
         self.ok_to_jump = True
+        self.dead = False
 
 
     def update(self, keys, camera_adjust_x, *args):
@@ -59,6 +60,8 @@ class Runner(Physics, pg.sprite.Sprite):
 
         if self.rect.y > 600:
             self.kill()
+            self.dead = True
+
 
 
 

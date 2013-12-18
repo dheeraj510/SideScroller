@@ -62,6 +62,16 @@ class Level_1(tools._State):
             self.camera_adjust_x = 0
 
 
+    def check_for_reset(self):
+        current_time = None
+        persistant = None
+
+        if self.runner.dead == True:
+            self.runner.dead = False
+            self.startup(current_time, persistant)
+
+
+
     def update(self, surface, keys, current_time):
         """Updates level"""
         self.current_time = current_time
@@ -69,6 +79,7 @@ class Level_1(tools._State):
         self.camera()
         self.allSprites.update(keys, self.camera_adjust_x, self.ground_and_platforms)
         self.allSprites.draw(surface)
+        self.check_for_reset()
 
 
 
