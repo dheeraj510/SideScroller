@@ -17,6 +17,7 @@ CYAN         = (  0, 255, 255)
 BLACK        = (  0,   0,   0)
 NEAR_BLACK    = ( 19,  15,  48)
 COMBLUE      = (233, 232, 255)
+GOLD         = (255, 215,   0)
 
 BGCOLOR = NEAR_BLACK
 
@@ -55,3 +56,9 @@ PLAT2_STARTY = PLAT1_STARTY - 100
 
 PLAT3_STARTX = PLAT2_STARTX + 100
 PLAT3_STARTY = PLAT2_STARTY - 100
+
+
+##Coin Constants##
+
+COIN_WIDTH = 20
+COIN_HEIGHT = 20
