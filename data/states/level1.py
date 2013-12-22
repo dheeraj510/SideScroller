@@ -46,11 +46,11 @@ class Level_1(tools._State):
 
 
     def setup_platforms(self):
-        platform1 = platform.Platform(con.PLAT1_STARTX, con.PLAT1_STARTY)
+        platform1 = platform.Platform(con.PLAT1_STARTX, con.PLAT1_STARTY, True)
         platform2 = platform.Platform(con.PLAT2_STARTX, con.PLAT2_STARTY)
         platform3 = platform.Platform(con.PLAT3_STARTX, con.PLAT3_STARTY)
         platform4 = platform.Platform(1000, con.PLAT3_STARTY)
-        platform5 = platform.Platform(1175, con.PLAT3_STARTY)
+        platform5 = platform.Platform(1175, con.PLAT3_STARTY, True)
 
 
         self.platforms = pg.sprite.Group(platform1, platform2, platform3,

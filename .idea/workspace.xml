@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cdf68d2-6da0-4c77-a206-54e26df0503f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/components/coin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/components/text.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/constants.py" afterPath="$PROJECT_DIR$/data/constants.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/states/level1.py" afterPath="$PROJECT_DIR$/data/states/level1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/components/platform.py" afterPath="$PROJECT_DIR$/data/components/platform.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/components/runner.py" afterPath="$PROJECT_DIR$/data/components/runner.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SideScroller.iws" />
@@ -29,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="runner.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="runner.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/components/runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="30" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+            <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.6896552" vertical-offset="210" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="level1.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="level1.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/states/level1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="31" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.37931034" vertical-offset="1155" max-vertical-offset="1680">
+            <state line="52" column="66" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1680">
               <folding>
                 <element signature="e#32#51#0" expanded="true" />
               </folding>
@@ -52,7 +51,7 @@
       <file leaf-file-name="text.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/components/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+            <state line="3" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="150">
               <folding />
             </state>
           </provider>
@@ -61,7 +60,7 @@
       <file leaf-file-name="coin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/components/coin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="39" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state line="8" column="39" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -88,8 +87,12 @@
       <file leaf-file-name="platform.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/components/platform.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="375">
-              <folding />
+            <state line="23" column="32" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+              <folding>
+                <marker date="1387753416000" expanded="true" signature="80:1197" placeholder="..." />
+                <marker date="1387753416000" expanded="true" signature="127:551" placeholder="..." />
+                <marker date="1387753416000" expanded="true" signature="604:739" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,13 +124,13 @@
         <option value="$PROJECT_DIR$/data/setup.py" />
         <option value="$PROJECT_DIR$/data/tools.py" />
         <option value="$PROJECT_DIR$/data/components/ground.py" />
-        <option value="$PROJECT_DIR$/data/components/platform.py" />
         <option value="$PROJECT_DIR$/data/components/physics.py" />
-        <option value="$PROJECT_DIR$/data/components/runner.py" />
         <option value="$PROJECT_DIR$/data/components/coin.py" />
         <option value="$PROJECT_DIR$/data/constants.py" />
         <option value="$PROJECT_DIR$/data/components/text.py" />
+        <option value="$PROJECT_DIR$/data/components/platform.py" />
         <option value="$PROJECT_DIR$/data/states/level1.py" />
+        <option value="$PROJECT_DIR$/data/components/runner.py" />
       </list>
     </option>
   </component>
@@ -163,7 +166,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,15 +236,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -436,7 +439,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32872927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -499,13 +502,6 @@
         <state line="6" column="23" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/components/platform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="57" selection-start="1531" selection-end="1538" vertical-scroll-proportion="-0.022288261" vertical-offset="660" max-vertical-offset="2550">
@@ -516,13 +512,6 @@
     <entry file="file://$PROJECT_DIR$/data/components/ground.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="27" selection-start="516" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/components/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1560">
           <folding />
         </state>
       </provider>
@@ -548,12 +537,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/components/platform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="32" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <folding>
+            <marker date="1387753416000" expanded="true" signature="80:1197" placeholder="..." />
+            <marker date="1387753416000" expanded="true" signature="127:551" placeholder="..." />
+            <marker date="1387753416000" expanded="true" signature="604:739" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/states/level1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="31" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.37931034" vertical-offset="1155" max-vertical-offset="1680">
+        <state line="52" column="66" selection-start="1880" selection-end="1880" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1680">
           <folding>
             <element signature="e#32#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/components/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.6896552" vertical-offset="210" max-vertical-offset="1710">
+          <folding />
         </state>
       </provider>
     </entry>

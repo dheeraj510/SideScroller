@@ -25,6 +25,8 @@ class Runner(Physics, pg.sprite.Sprite):
         self.moving_right = True
         self.ok_to_jump = True
         self.dead = False
+        self.on_mover = False
+        self.mover = None
 
 
     def update(self, keys, camera_adjust_x, *args):
@@ -32,6 +34,8 @@ class Runner(Physics, pg.sprite.Sprite):
 
         self.event_loop(keys)
         self.check_x_collisions(ground_and_platforms)
+        if self.on_mover:
+            self.rect.bottom = self.mover.rect.top
         self.rect.y += self.y_vel
         self.check_y_collisions(ground_and_platforms)
         self.physics_update()
@@ -57,6 +61,11 @@ class Runner(Physics, pg.sprite.Sprite):
             self.rect.bottom = obstacle.rect.top
             self.y_vel = 0
             self.ok_to_jump = True
+            self.on_mover = True
+            self.mover = obstacle
+        elif obstacle == None:
+            self.on_mover = False
+
 
         if self.rect.y > 600:
             self.kill()
@@ -87,6 +96,7 @@ class Runner(Physics, pg.sprite.Sprite):
         if self.ok_to_jump:
             self.y_vel = self.jump_power
             self.ok_to_jump = False
+            self.on_mover = False
 
 
 
