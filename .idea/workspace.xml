@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cdf68d2-6da0-4c77-a206-54e26df0503f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/states/level1.py" afterPath="$PROJECT_DIR$/data/states/level1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/components/platform.py" afterPath="$PROJECT_DIR$/data/components/platform.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/components/runner.py" afterPath="$PROJECT_DIR$/data/components/runner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4cdf68d2-6da0-4c77-a206-54e26df0503f" name="Default" comment="" />
     <ignored path="SideScroller.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,10 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="runner.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="runner.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/components/runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.6896552" vertical-offset="210" max-vertical-offset="1710">
+            <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1710">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tools.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="57" selection-start="1531" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="2550">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/states/menu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="33" selection-start="430" selection-end="430" vertical-scroll-proportion="-1.2758621" vertical-offset="780" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -477,11 +490,6 @@
         <state line="14" column="79" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="765" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/states/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/states/splash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="26" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
@@ -500,13 +508,6 @@
     <entry file="file://$PROJECT_DIR$/data/components/physics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="23" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="57" selection-start="1531" selection-end="1538" vertical-scroll-proportion="-0.022288261" vertical-offset="660" max-vertical-offset="2550">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/components/ground.py">
@@ -559,7 +560,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/components/runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.6896552" vertical-offset="210" max-vertical-offset="1710">
+        <state line="37" column="50" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="57" selection-start="1531" selection-end="1538" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/states/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="33" selection-start="430" selection-end="430" vertical-scroll-proportion="-1.2758621" vertical-offset="780" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
